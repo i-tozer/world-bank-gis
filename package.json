@@ -1,0 +1,22 @@
+{
+  "name": "world-gdp-map",
+  "version": "1.0.0",
+  "description": "A web application that visualizes World Bank GDP data on a world map using Mapbox GL JS",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "mapbox",
+    "gdp",
+    "visualization",
+    "world-bank",
+    "map"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "engines": {
+    "node": ">=12.0.0"
+  }
+} 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World GDP Map</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>World GDP Map</h1>
+        <div class="map-container">
+            <div id="map"></div>
+            <button id="view-toggle" class="view-toggle">Switch to 2D View</button>
+            <div class="legend">
+                <h3>GDP (Current US$)</h3>
+                <div class="legend-items">
+                    <!-- Legend items will be added by JavaScript -->
+                </div>
+            </div>
+        </div>
+        <div class="year-selector">
+            <label for="year-slider">Year: <span id="selected-year">2022</span></label>
+            <input type="range" id="year-slider" min="1960" max="2022" value="2022" step="1">
+        </div>
+        <div class="info-panel">
+            <h3>Country Information</h3>
+            <div id="country-info">
+                <p>Hover over a country to see details</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/map.js"></script>
+</body>
+</html> 
